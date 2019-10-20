@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300&display=swap');
+$navigation_bg_color: black;
+$hero_text_color: white;
+$primary_color: #ED503E;
+
+body {
+	margin: 0 auto;
+	font-family: SansSerif, sans-serif;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	height: auto;
+}
+
+h1 {
+	all: unset;
+}
+
+h2 {
+	all: unset;
+}
+
+button {
+	all: unset;
+}
+
+
+.navigation {
+	height: 50px;
+	background-color: $navigation_bg_color;
+
+	&__logo {
+		padding: 15px;
+	}
+}
+
+.hero {
+	color: $hero_text_color;
+
+	&__image {
+		background-image: linear-gradient(
+		rgba(0,0,0,0.7),
+		rgba(0,0,0,0.5)
+	), url("../assets/images/hero-image.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__title {
+		font-size: 36px;
+		font-family: "Oswald", sans-serif;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		font-family: "OpenSans", sans-serif;
+	}
+}
+
+.container {
+	&--black {
+		height: 298px;
+		background-image: url("../assets/shapes/black.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	&--red {
+		height: 373px;
+		background-image: url("../assets/shapes/red.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		object-fit: contain;
+		padding-top: 50px;
+	}
+
+	&--image {
+		height: 400px;
+		background-image: url("../assets/shapes/overlay.png"),
+		url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		object-fit: contain;
+	}
+
+	&__footer {
+		background-image: url("../assets/shapes/footer.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+
+	&__paragraph--white {
+		padding: 60px;
+		text-align: center;
+		color: white;
+	}
+}
+
+.button {
+	&--primary {
+		background-color: $primary_color;
+		margin: 20px;
+		padding: 20px;
+		color: white;
+	}
+}
+
+.card {
+	margin: auto;
+	width: 80%;
+	height: auto;
+	background-image: url("../assets/shapes/Rectangle.png");
+	background-repeat: no-repeat;
+
+	&__paragraph {
+		padding: 20px;
+		text-align: center;
+	}
+
+	&__link {
+		color: $primary_color
+	}
+}

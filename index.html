@@ -5,20 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!--  StyleSheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/value.css">
+
+<!--    <link rel="stylesheet" href="css/test.css">-->
+    <title>About Us | BallerTV</title>
 </head>
 <body>
-<div class="header">
-    <div class="header__navigation">
-        BallerTV
-    </div>
-    <div class="header__jumbotron">
-        <h1 class="header__title">We Build Winning Teams</h1>
-        <p class="header__subtitle">They're helping us build the widest sports network in the world.</p>
-    </div>
+<div class="navigation">
+    <img class="navigation__logo"
+         src="./assets/icons/BallerTV-Logo-No-Dot-White-Baller.png"
+         alt="BallerTV Logo">
 </div>
-<div class="section">
-    <h2 class="section__header">Our Vision</h2>
+
+<div class="site">
+
+</div>
+
+<section class="hero hero__image">
+    <h1 class="hero__title">WE BUILD <br> WINNING <br> TEAMS</h1>
+    <p class="hero__subtitle">They're helping us build <br> the widest sports network <br> in the world.</p>
+</section>
+
+
+
+<section>
+    <h2 class="section__title">Our Vision</h2>
     <p class="section__paragraph">
         BallerTV was founded in 2016 by Cramster co-founders Rob Angarita
         and Aaron Hawkey to provide live video coverage of amateur sports
@@ -28,14 +42,68 @@
         broadcast our 100,000th game this year -- and we're just getting
         started.
     </p>
+</section>
+
+<!--  News / Slide Show -->
+<div class="container--black">
+    <div class="container--red">
+        <div class="container__paragraph--white">
+            BallerTV and its founders <br> have appeared in:
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="news">
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/bloomberg-logo.png"
+                                alt="Bloomberg Logo" >
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/techcrunch-logo.png"
+                                alt="Techcrunch Logo" >
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/wsj-logo.png"
+                                alt="The Wall Street Journal Logo" >
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="news">
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/espn-logo.png"
+                                alt="E S P N Logo" >
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/ny-times-logo.png"
+                                alt="The New York Times Logo" >
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/forbes-logo.png"
+                                alt="Forbes Logo" >
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="news">
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/la-times-logo.png"
+                                alt="Los Angeles Times Logo" >
+                        <img
+                                class="news__logo"
+                                src="./assets/logos/usa-today-logo.png"
+                                alt="U S A Today Logo" >
+                    </div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="section">
-    <p class="section__paragraph">
-        BallerTV and its founders have appeared in:
-    </p>
-    <!--  section slide show  -->
-</div>
-<div class="section">
+
+
+<section>
     <h2 class="section__header">Our Team</h2>
     <p class="section__paragraph">
         Our founders started BallerTV in 2016 with a scrappy 6-man development
@@ -46,24 +114,33 @@
         sports network.
     </p>
     <p class="section__paragraph">
-        We assemble fearless teams, trained to dominate operations challenges and
-        deliver top-notch content to our subscribers.
-    </p>
+            We assemble fearless teams, trained to dominate operations challenges and
+            deliver top-notch content to our subscribers.
+        </p>
+</section>
+
+<div class="container--red">
+    <div class="container--image">
+        <div class="container__paragraph--white">
+            Want to join the team at HQ?
+            <button class="button--primary">
+                View our HQ Career Opportunities
+            </button>
+        </div>
+    </div>
 </div>
-<div class="section">
-    <!--  Transform Section with background image  -->
-    <p class="section__paragraph">
-        Want to join the team at HQ?
-    </p>
-    <button class="button button--primary">
-        View our HQ Career Opportunities
-    </button>
-</div>
-<div class="section">
+
+<section>
+    <!--  Put container in here. -->
+</section>
+
+
+
+<section>
     <h2 class="section__header">Our Values</h2>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Leave it All on the Floor</div>
+        <img class="value__icon" src="./assets/icons/soccer-field-icon.png" alt="Soccer Field Icon">
+        <div class="value_title">Leave it All on the Floor</div>
         <div class="value__paragraph">
             Lakers had Kobe, we’ve got “Bobe”. Bobe’s work ethic is unmatched and
             is the example by which all of us should follow. We have a generational
@@ -73,16 +150,16 @@
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Move Without the Ball</div>
+        <img class="value__icon" src="./assets/icons/strategic-movement-sketch-of-sportive-instructions-icon.png" alt="Strategic Movement Sketch of Sportive Instructions Icon">
+        <div class="value__title">Move Without the Ball</div>
         <div class="value__paragraph">
             We’re constantly trying to create opportunities for our teammates by finding
             ways to be helpful — even when the spotlight isn’t on us.
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Don't Play Scared</div>
+        <img class="value__icon" src="./assets/icons/soccer-ball-icon.png" alt="Soccer Ball Icon">
+        <div class="value_title">Don't Play Scared</div>
         <div class="value__paragraph">
             We are going big, and willing to take calculated risks in pursuit of our mission.
             We understand that all bets won’t work out, but we will learn from all our mistakes
@@ -90,16 +167,16 @@
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Team > Player</div>
+        <img class="value__icon" src="./assets/icons/business-partnership-icon.png" alt="All Hands In The Middle Icon">
+        <div class="value__title">Team > Player</div>
         <div class="value__paragraph">
             MJ said, “Talent wins games, but teamwork and intelligence win championships.”
             We are here to win championships.
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Win the "Right" Way</div>
+        <img class="value__icon" src="./assets/icons/trophy-icon.png" alt="Trophy Icon">
+        <div class="value__title">Win the "Right" Way</div>
         <div class="value__paragraph">
             We believe “success without character is failure”. We treat all our coworkers,
             customers, event operators and network of site leads and broadcasters with respect,
@@ -107,30 +184,47 @@
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Everyone Broadcasts</div>
+        <img class="value__icon" src="./assets/icons/antenna-icon.png" alt="Antenna Icon">
+        <div class="value__title">Everyone Broadcasts</div>
         <div class="value__paragraph">
             We are scrappy and we do whatever it takes to achieve our goals.
             Everyone starts as a broadcaster.
         </div>
     </div>
     <div class="value">
-        <div class="value__icon">Icon</div>
-        <div class="value__header">Preparedness</div>
+        <img class="value__icon" src="./assets/icons/american-football-icon.png" alt="American Football Helmet Icon">
+        <div class="value__title">Preparedness</div>
         <div class="value__paragraph">
             John Wooden famously said, “failing to prepare is preparing to fail.”
             We don’t cut corners and we don’t leave anything to chance. We make our own luck.
         </div>
     </div>
-</div>
-<div class="section">
-    <div class="section__header--inverted">Join The Team</div>
+</section>
+
+<div class="container__footer">
+    <div class="container__paragraph--white">Join The Team</div>
     <div class="card">
-        <p class="card__paragraph">Want to join our HQ in Pasadena, California?</p>
-        <a href="" class="card__link">BROWSE OUR FULL TIME EMPLOYMENT LISTINGS >></a>
-        <p class="card__paragraph">Want to join our HQ in Pasadena, California?</p>
-        <a href="" class="card__link">FIND AN EVENT NEAR YOU AND APPLY TODAY >></a>
+        <div class="card__paragraph">
+            Want to join our HQ in Pasadena, California?
+        </div>
+        <div class="card__paragraph">
+            <a href="" class="card__link">
+                BROWSE OUR FULL TIME EMPLOYMENT LISTINGS >>
+            </a>
+        </div>
+        <div class="card__paragraph">
+            Want become a broadcaster? Becoming a broadcaster is always a
+            great way to get a start as part of the BallterTV Team!
+        </div>
+        <div class="card__paragraph">
+            <a href="" class="card__link">
+                FIND AN EVENT NEAR YOU AND APPLY TODAY >>
+            </a>
+        </div>
     </div>
 </div>
+
+
+<script src="js/slideshow.js"></script>
 </body>
 </html>

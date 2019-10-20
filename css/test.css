@@ -1,0 +1,951 @@
+#static_pages-about_us .fpc__content{
+	overflow: hidden
+}
+
+#static_pages-about_us .section.section--hero{
+	position: relative;
+	height: 65%;
+	height: 65vh;
+	min-height: 300px;
+	padding-top: 64px;
+	background: #1e1e1e url("https://baller-assets.s3.amazonaws.com/assets/about-background-hero-softball-720c994e88bc5b7423bee6f3a966d6e4ee63dafd43d09b4f3231fc02b67ead14.jpg") no-repeat center center;
+	background-size: cover;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	box-orient: vertical;
+	box-direction: normal;
+	-moz-flex-direction: column;
+	flex-direction: column;
+	max-height: 800px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--hero{
+		padding-top: 72px;
+		height: 55%;
+		height: 55vh;
+		min-height: 480px;
+		max-height: 600px;
+		box-pack: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-ms-flex-pack: center
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--hero{
+		min-height: 540px;
+		max-height: 100%
+	}
+}
+
+#static_pages-about_us .section.section--hero:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.54;
+	background: linear-gradient(211deg, transparent 35%, #000 100%)
+}
+
+#static_pages-about_us .section.section--hero>.wrapper{
+	position: relative;
+	z-index: 2;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	box-orient: vertical;
+	box-direction: normal;
+	-moz-flex-direction: column;
+	flex-direction: column;
+	box-pack: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	height: 100%
+}
+
+#static_pages-about_us .section.section--hero .section__title.title--primary{
+	font-size: 38px;
+	font-size: 3.8rem;
+	line-height: 45.6px;
+	line-height: 4.56rem;
+	color: #FFF
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--hero .section__title.title--primary{
+		font-size: 64px;
+		font-size: 6.4rem;
+		line-height: 76.8px;
+		line-height: 7.68rem
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--hero .section__title.title--primary{
+		font-size: 74px;
+		font-size: 7.4rem;
+		line-height: 88.8px;
+		line-height: 8.88rem
+	}
+}
+
+#static_pages-about_us .section.section--hero .section__title.title--primary:before{
+	background: linear-gradient(to right, #FFF 0%, #FFF 72%, #ea4e3c 72%, #ea4e3c 100%)
+}
+
+#static_pages-about_us .section.section--hero .hero__subtitle{
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 22.4px;
+	line-height: 2.24rem;
+	font-weight: normal;
+	color: #FFF;
+	margin-top: 16px;
+	max-width: 480px;
+	text-align: left
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--hero .hero__subtitle{
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 25.2px;
+		line-height: 2.52rem
+	}
+}
+
+#static_pages-about_us .section.section--hero .hero__images{
+	display: none
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--hero .hero__images{
+		display: block
+	}
+}
+
+#static_pages-about_us .section.section--hero .section__divider{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto
+}
+
+#static_pages-about_us .section.section--hero .section__divider .section__divider__image{
+	width: 100%;
+	height: auto;
+	margin-bottom: -1px
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--featured-quote{
+		margin-top: 60px
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__image{
+		width: 93.75%
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__image{
+		width: 62%
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy{
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+		padding-bottom: 48px
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy{
+		position: absolute;
+		left: 48%;
+		top: 26%;
+		right: 8%
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__quote .quote__paragraph{
+		margin-right: 12%
+	}
+}
+
+#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	box-pack: justify;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	-ms-flex-pack: justify;
+	margin-top: 48px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation{
+		margin-left: 9%;
+		margin-right: 9%
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation{
+		box-pack: start;
+		-moz-justify-content: flex-start;
+		-ms-justify-content: flex-start;
+		-o-justify-content: flex-start;
+		justify-content: flex-start;
+		-ms-flex-pack: start;
+		margin-right: auto
+	}
+}
+
+#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation .citation__paragraph{
+	font-size: 5.8vw;
+	line-height: 6.96vw
+}
+
+#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation .citation__paragraph:last-of-type{
+	margin-right: 10px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation .citation__paragraph{
+		font-size: 4.6vw;
+		line-height: 5.52vw
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--featured-quote .featured-quote__copy .featured-quote__copy__citation .citation__paragraph{
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 28.8px;
+		line-height: 2.88rem;
+		margin-right: 24px
+	}
+}
+
+#static_pages-about_us .section.section--our-mission{
+	padding-top: 60px;
+	padding-bottom: 90px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--our-mission>.wrapper{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-pack: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-ms-flex-pack: center
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--our-mission .section__title{
+		margin-right: 6%
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--our-mission .section__paragraph{
+		width: 55%;
+		max-width: 776px;
+		margin-top: 10px
+	}
+}
+
+#static_pages-about_us .section.section--impact{
+	position: relative;
+	background: #ea4e3c
+}
+
+#static_pages-about_us .section.section--impact:before{
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: -12px;
+	left: 50%;
+	width: 118px;
+	height: 80px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: url("https://baller-assets.s3.amazonaws.com/assets/boxes-divider-dark-64db72b9fd28b00b7aaf7dbe11a0ae566cb9b36fe041fbda3e31e5658bcef2fe.svg") no-repeat 20% center;
+	background-size: 118px 80px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact:before{
+		left: 32%;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+
+#static_pages-about_us .section.section--impact .section__copy{
+	position: relative;
+	padding-top: 102px;
+	padding-bottom: 36px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact .section__copy{
+		padding-left: 3.125%;
+		padding-right: 3.125%;
+		width: 93.75%;
+		max-width: 1400px;
+		min-width: 240px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 150px
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact .section__copy>.wrapper{
+		box-sizing: border-box;
+		padding-left: 0;
+		padding-right: 48px;
+		width: 50%;
+		max-width: 100%;
+		margin-left: 0
+	}
+}
+
+#static_pages-about_us .section.section--impact .section__copy .section__divider{
+	z-index: 2;
+	bottom: -28px;
+	left: 0;
+	width: 100%;
+	height: 28px;
+	overflow: hidden;
+	text-align: center
+}
+@media only screen and (min-width: 640px){
+	#static_pages-about_us .section.section--impact .section__copy .section__divider{
+		bottom: -68px;
+		height: 68px
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact .section__copy .section__divider{
+		display: none
+	}
+}
+
+#static_pages-about_us .section.section--impact .section__copy .section__divider .section__divider__image{
+	min-width: 375px;
+	width: 100%;
+	height: 28px;
+	margin-bottom: -1px
+}
+@media only screen and (min-width: 640px){
+	#static_pages-about_us .section.section--impact .section__copy .section__divider .section__divider__image{
+		height: 68px
+	}
+}
+
+#static_pages-about_us .section.section--impact .section__copy .section__title,#static_pages-about_us .section.section--impact .section__copy .section__paragraph{
+	color: #FFF
+}
+
+#static_pages-about_us .section.section--impact .section__copy .section__title:before{
+	background: linear-gradient(to right, #FFF 0%, #FFF 72%, #1e1e1e 72%, #1e1e1e 100%)
+}
+
+#static_pages-about_us .section.section--impact .section__featured-photo{
+	width: 100%
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact .section__featured-photo{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-pack: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-ms-flex-pack: center;
+		box-align: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		-ms-flex-align: center;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		max-width: 775px;
+		background: url("https://baller-assets.s3.amazonaws.com/assets/about-impact-photo-bball-bf83d4eb75d9f853ec67e37e86f6bbdd3317ddc4e354ede00d49e4b04935f31c.jpg") no-repeat 20% center;
+		background-size: cover
+	}
+}
+
+#static_pages-about_us .section.section--impact .section__featured-photo .featured-photo__image{
+	width: 100%
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--impact .section__featured-photo .featured-photo__image{
+		display: none
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv{
+	position: relative;
+	margin-top: -72px;
+	margin-bottom: 198px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-pack: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-ms-flex-pack: center;
+		margin-top: 0;
+		background: #e6e6e6;
+		margin-bottom: 72px
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--access-ballertv{
+		min-height: 410px
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__divider{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	top: -72px;
+	left: 0
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv .section__divider{
+		top: -160px;
+		height: 160px
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__divider .section__divider__image{
+	width: 100%;
+	min-width: 1540px;
+	margin-top: 1px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv .section__divider .section__divider__image{
+		position: absolute;
+		top: 0;/* right:0; *//* bottom:0; */
+		left: 0;/* width:100%; *//* height:160px; *//* -webkit-transform:scaleX(-1); *//* transform:scaleX(-1) */
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv>.wrapper--offset{
+	background: #e6e6e6;
+	margin-top: 72px;
+	position: relative;
+	z-index: 2;
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv>.wrapper--offset{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-align: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		-ms-flex-align: center;
+		background: transparent;
+		margin-top: 0;
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__featured-photo,#static_pages-about_us .section.section--access-ballertv .section__copy{
+	position: relative;
+	z-index: 2
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__featured-photo{
+	background: #e6e6e6;
+	box-sizing: border-box;
+	padding-left: 3.125%;
+	padding-right: 3.125%;
+	text-align: center
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv .section__featured-photo{
+		padding-left: 3.125%;
+		padding-right: 3.125%;
+		width: 93.75%;
+		max-width: 1400px;
+		min-width: 240px;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: transparent;
+		text-align: right
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--access-ballertv .section__featured-photo{
+		bottom: -30%
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__featured-photo .featured-photo__image{
+	width: 100%;
+	margin-bottom: -140px;
+	max-width: 440px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv .section__featured-photo .featured-photo__image{
+		max-width: 50%;
+		margin-bottom: -20%
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--access-ballertv .section__featured-photo .featured-photo__image{
+		width: 60%;
+		max-width: 655px;
+		margin-right: -48px;
+		margin-bottom: -5%
+	}
+}
+
+#static_pages-about_us .section.section--access-ballertv .section__copy{
+	padding-bottom: 48px
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--access-ballertv .section__copy{
+		padding-top: 48px;
+		margin-right: 24px;
+		max-width: 340px;
+		width: 50%
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--access-ballertv .section__copy{
+		margin-right: 48px;
+		width: 40%;
+		max-width: 500px
+	}
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--investors{
+		padding-bottom: 12px
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--investors{
+		padding-top: 48px
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--investors>.wrapper{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-pack: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-ms-flex-pack: center
+	}
+}
+
+#static_pages-about_us .section.section--investors .section__copy{
+	margin-bottom: 30px
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--investors .section__copy{
+		margin-right: 6%;
+		max-width: 440px
+	}
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple;
+	box-lines: multiple;
+	flex-wrap: wrap;
+	box-align: start;
+	-moz-align-items: flex-start;
+	-ms-align-items: flex-start;
+	-o-align-items: flex-start;
+	align-items: flex-start;
+	-ms-flex-align: start;
+	box-pack: distribute;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	-o-justify-content: space-around;
+	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	max-width: 340px;
+	margin-left: auto;
+	margin-right: auto
+}
+@media only screen and (min-width: 768px){
+	#static_pages-about_us .section.section--investors .investors__investor-images{
+		max-width: 516px;
+		box-pack: justify;
+		-moz-justify-content: space-between;
+		-ms-justify-content: space-between;
+		-o-justify-content: space-between;
+		justify-content: space-between;
+		-ms-flex-pack: justify
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--investors .investors__investor-images{
+		max-width: 100%;
+		-ms-align-content: flex-start;
+		align-content: flex-start;
+		box-flex: 0;
+		-moz-flex: 0 0 516px;
+		flex: 0 0 516px;
+		margin-top: 34px;
+		margin-left: 0;
+		margin-right: 0
+	}
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container{
+	background: #FAFAFA;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	box-align: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	-ms-flex-align: center;
+	box-pack: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	box-sizing: border-box;
+	position: relative;
+	width: 44%;
+	max-width: 148px;
+	margin-bottom: 36px;
+	padding: 6px
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container:before{
+	display: block;
+	content: "";
+	width: 100%;
+	padding-top: 100%
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container>.content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container.image-container--empty{
+	background: transparent
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container .investor-images__image{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	max-width: 130px;
+	height: auto
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container .investor-images__image.image--sf49ers{
+	max-width: 96px
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container .investor-images__image.image--peak-ventures{
+	max-width: 94px
+}
+
+#static_pages-about_us .section.section--investors .investors__investor-images .investors__investor-images__image-container .investor-images__image.image--unusual-ventures{
+	max-width: 120px
+}
+
+#static_pages-about_us .section.section--our-team{
+	position: relative;
+	background: #333;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	box-orient: vertical;
+	box-direction: reverse;
+	-moz-flex-direction: column-reverse;
+	flex-direction: column-reverse
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--our-team{
+		box-orient: horizontal;
+		box-direction: normal;
+		-moz-flex-direction: row;
+		flex-direction: row
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--our-team>.wrapper{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		-ms-align-content: center;
+		align-content: center
+	}
+}
+
+#static_pages-about_us .section.section--our-team .section__divider{
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: auto;
+	overflow: hidden
+}
+
+#static_pages-about_us .section.section--our-team .section__divider .section__divider__image{
+	width: 100%;
+	min-width: 1540px;
+	height: auto;
+	margin-top: -1px;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--our-team .section__featured-photo{
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 60%;
+		max-width: 913px;
+		background: url("https://baller-assets.s3.amazonaws.com/assets/about-us-our-team-de28869fde93283fb40251207e06a708a517155d8accdd88acb85f977a104928.jpg") no-repeat center top;
+		background-size: cover
+	}
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .section__featured-photo:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 133px;
+		height: 100%;
+		background: url("https://baller-assets.s3.amazonaws.com/assets/diagonal-divider-vertical-our-team-623ad0afadedd547821e9cfe74d9564cd4478f5a1ab5fb4c65bae05b89a3c95f.svg") no-repeat left center;
+		background-size: 100% 100%
+	}
+}
+
+#static_pages-about_us .section.section--our-team .section__featured-photo .featured-photo__image{
+	width: 100%;
+	height: auto
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--our-team .section__featured-photo .featured-photo__image{
+		display: none
+	}
+}
+
+#static_pages-about_us .section.section--our-team .section__copy{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #FFF
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--our-team .section__copy{
+		margin-top: 30px;
+		width: 50%;
+		max-width: 340px
+	}
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .section__copy{
+		margin-top: 66px;
+		margin-right: 24px;
+		max-width: 488px
+	}
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .section__title-container{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-align: end;
+		-moz-align-items: flex-end;
+		-ms-align-items: flex-end;
+		-o-align-items: flex-end;
+		align-items: flex-end;
+		-ms-flex-align: end
+	}
+}
+
+#static_pages-about_us .section.section--our-team .section__title.title--primary{
+	font-size: 50px;
+	font-size: 5rem;
+	line-height: 60px;
+	line-height: 6rem
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .section__title.title--primary{
+		width: 50%
+	}
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .section__title-caption{
+		margin-bottom: 0;
+		width: 50%
+	}
+}
+
+#static_pages-about_us .section.section--our-team .our-team__team-members{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: flex;
+	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple;
+	box-lines: multiple;
+	flex-wrap: wrap;
+	margin-top: 48px
+}
+
+#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member{
+	box-sizing: border-box;
+	padding-right: 6px;
+	width: 50%;
+	margin-bottom: 30px
+}
+
+#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member .member__member-title,#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member .member__member-name{
+	text-transform: uppercase;
+	text-align: left
+}
+
+#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member .member__member-title{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 19.2px;
+	line-height: 1.92rem;
+	margin-bottom: 12px
+}
+
+#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member .member__member-name{
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 21.6px;
+	line-height: 2.16rem
+}
+@media only screen and (min-width: 1366px){
+	#static_pages-about_us .section.section--our-team .our-team__team-members .our-team__team-members__member .member__member-name{
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 28.8px;
+		line-height: 2.88rem
+	}
+}
+
+#static_pages-about_us .section.section--hiring{
+	background: #0076FF;
+	padding-top: 64px;
+	padding-bottom: 48px
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--hiring>.wrapper{
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -moz-flex;
+		display: flex;
+		box-align: start;
+		-moz-align-items: flex-start;
+		-ms-align-items: flex-start;
+		-o-align-items: flex-start;
+		align-items: flex-start;
+		-ms-flex-align: start
+	}
+}
+
+#static_pages-about_us .section.section--hiring .section__title,#static_pages-about_us .section.section--hiring .section__paragraph{
+	color: #FFF
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--hiring .section__paragraph{
+		box-flex: 1;
+		-moz-flex: 1;
+		flex: 1;
+		margin-top: 28px;
+		margin-left: 6%;
+		margin-right: 6%
+	}
+}
+@media only screen and (min-width: 960px){
+	#static_pages-about_us .section.section--hiring .section__button.button--cta{
+		margin-top: 34px
+	}
+}
