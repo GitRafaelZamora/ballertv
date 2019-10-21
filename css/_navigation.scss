@@ -1,0 +1,10 @@
+@import "global_variables";
+
+.navigation {
+  height: 50px;
+  background-color: $navigation_bg_color;
+
+  &__logo {
+    padding: 15px;
+  }
+}

@@ -38,8 +38,13 @@
 .news {
 	display: flex;
 	flex-direction: column;
+
 	&__logo {
 		object-fit: contain;
 		padding: 12px;
+	}
+
+	&__grid {
+		display: none;
 	}
 }

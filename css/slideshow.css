@@ -36,5 +36,7 @@
   .news__logo {
     object-fit: contain;
     padding: 12px; }
+  .news__grid {
+    display: none; }
 
 /*# sourceMappingURL=slideshow.css.map */

@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300&display=swap');
-$navigation_bg_color: black;
-$hero_text_color: white;
-$primary_color: #ED503E;
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400&display=swap');
 
-body {
-	margin: 0 auto;
-	font-family: SansSerif, sans-serif;
+// Variables
+@import "global_variables";
+
+// Mixins
+@mixin load-image($image_path, $image_height) {
+	height: $image_height;
+	background-image: url($image_path);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 20px;
-	height: auto;
+// Overrides
+body {
+	margin: 0 auto;
+	font-family: Oswald, sans-serif;
+	line-height: 1.5;
+}
+
+button {
+	all: unset;
 }
 
 h1 {
@@ -26,86 +32,16 @@ h2 {
 	all: unset;
 }
 
-button {
-	all: unset;
+section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-
-.navigation {
-	height: 50px;
-	background-color: $navigation_bg_color;
-
-	&__logo {
-		padding: 15px;
-	}
-}
-
-.hero {
-	color: $hero_text_color;
-
-	&__image {
-		background-image: linear-gradient(
-		rgba(0,0,0,0.7),
-		rgba(0,0,0,0.5)
-	), url("../assets/images/hero-image.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	&__title {
-		font-size: 36px;
-		font-family: "Oswald", sans-serif;
-	}
-
-	&__subtitle {
-		font-size: 14px;
-		font-family: "OpenSans", sans-serif;
-	}
-}
-
-.container {
-	&--black {
-		height: 298px;
-		background-image: url("../assets/shapes/black.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		object-fit: cover;
-	}
-
-	&--red {
-		height: 373px;
-		background-image: url("../assets/shapes/red.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		object-fit: contain;
-		padding-top: 50px;
-	}
-
-	&--image {
-		height: 400px;
-		background-image: url("../assets/shapes/overlay.png"),
-		url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		object-fit: contain;
-	}
-
-	&__footer {
-		background-image: url("../assets/shapes/footer.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-	}
-
-	&__paragraph--white {
-		padding: 60px;
-		text-align: center;
-		color: white;
-	}
-}
-
+// Classes
 .button {
+	cursor: pointer;
 	&--primary {
+		cursor: pointer;
 		background-color: $primary_color;
 		margin: 20px;
 		padding: 20px;
@@ -114,12 +50,11 @@ button {
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	width: 80%;
-	height: auto;
-	background-image: url("../assets/shapes/Rectangle.png");
-	background-repeat: no-repeat;
-
+	@include load-image("../assets/shapes/Rectangle.png", 450px);
 	&__paragraph {
 		padding: 20px;
 		text-align: center;
@@ -129,3 +64,90 @@ button {
 		color: $primary_color
 	}
 }
+
+.container {
+	width: 100vw;
+	&--black {
+		@include load-image("../assets/shapes/black.png", 298px);
+	}
+
+	&--red {
+		@include load-image("../assets/shapes/red.png", 373px);
+	}
+
+	&--image {
+		@include load-image("../assets/shapes/overlay.png", 400px);
+		background-image: url("../assets/shapes/overlay.png"),
+		url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png");
+	}
+
+	&__footer {
+		@include load-image("../assets/shapes/footer.png", 580px);
+	}
+
+	&__paragraph--white {
+		padding-top: 90px;
+		text-align: center;
+		color: white;
+	}
+}
+
+.hero {
+	color: $hero_text_color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__image {
+		@include load-image("../assets/images/hero-image.jpg", 582px);
+		background-image: linear-gradient(
+			rgba(0,0,0,0.7),
+			rgba(0,0,0,0.5)
+		), url("../assets/images/hero-image.jpg");
+	}
+
+	&__title {
+		font-size: $extra-large;
+	}
+
+	&__subtitle {
+		font-size: $medium;
+		font-weight: 200;
+		font-family: "OpenSans", sans-serif;
+	}
+}
+
+.navigation {
+	height: 50px;
+	background-color: $navigation_bg_color;
+
+	&__logo {
+		padding-top: 15px;
+	}
+}
+
+.section {
+	&__title {
+		font-weight: bold;
+		font-size: larger;
+	}
+	&__paragraph {
+		padding-left: 20%;
+		padding-right: 20%;
+		color: $paragraph_color;
+		font-weight: lighter;
+	}
+}
+
+.site__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+

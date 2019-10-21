@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400&display=swap");
 body {
   margin: 0 auto;
-  font-family: SansSerif, sans-serif; }
+  font-family: Oswald, sans-serif;
+  line-height: 1.5; }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  height: auto; }
+button {
+  all: unset; }
 
 h1 {
   all: unset; }
@@ -18,73 +13,108 @@ h1 {
 h2 {
   all: unset; }
 
-button {
-  all: unset; }
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-.navigation {
-  height: 50px;
-  background-color: black; }
-  .navigation__logo {
-    padding: 15px; }
-
-.hero {
-  color: white; }
-  .hero__image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .hero__title {
-    font-size: 36px;
-    font-family: "Oswald", sans-serif; }
-  .hero__subtitle {
-    font-size: 14px;
-    font-family: "OpenSans", sans-serif; }
-
-.container--black {
-  height: 298px;
-  background-image: url("../assets/shapes/black.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover; }
-.container--red {
-  height: 373px;
-  background-image: url("../assets/shapes/red.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain;
-  padding-top: 50px; }
-.container--image {
-  height: 400px;
-  background-image: url("../assets/shapes/overlay.png"), url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain; }
-.container__footer {
-  background-image: url("../assets/shapes/footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%; }
-.container__paragraph--white {
-  padding: 60px;
-  text-align: center;
-  color: white; }
-
-.button--primary {
-  background-color: #ED503E;
-  margin: 20px;
-  padding: 20px;
-  color: white; }
+.button {
+  cursor: pointer; }
+  .button--primary {
+    cursor: pointer;
+    background-color: #ED503E;
+    margin: 20px;
+    padding: 20px;
+    color: white; }
 
 .card {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 80%;
-  height: auto;
+  height: 450px;
   background-image: url("../assets/shapes/Rectangle.png");
-  background-repeat: no-repeat; }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .card__paragraph {
     padding: 20px;
     text-align: center; }
   .card__link {
     color: #ED503E; }
+
+.container {
+  width: 100vw; }
+  .container--black {
+    height: 298px;
+    background-image: url("../assets/shapes/black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .container--red {
+    height: 373px;
+    background-image: url("../assets/shapes/red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .container--image {
+    height: 400px;
+    background-image: url("../assets/shapes/overlay.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/shapes/overlay.png"), url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"); }
+  .container__footer {
+    height: 580px;
+    background-image: url("../assets/shapes/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .container__paragraph--white {
+    padding-top: 90px;
+    text-align: center;
+    color: white; }
+
+.hero {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .hero__image {
+    height: 582px;
+    background-image: url("../assets/images/hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/images/hero-image.jpg"); }
+  .hero__title {
+    font-size: 36px; }
+  .hero__subtitle {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "OpenSans", sans-serif; }
+
+.navigation {
+  height: 50px;
+  background-color: black; }
+  .navigation__logo {
+    padding-top: 15px; }
+
+.section__title {
+  font-weight: bold;
+  font-size: larger; }
+.section__paragraph {
+  padding-left: 20%;
+  padding-right: 20%;
+  color: dimgray;
+  font-weight: lighter; }
+
+.site__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

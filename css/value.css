@@ -1,4 +1,14 @@
-.value__icon {
-  padding: 10px; }
+.value {
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%; }
+  .value__icon {
+    padding: 10px; }
+  .value__paragraph {
+    color: dimgray;
+    font-size: 14px; }
+  .value__title {
+    font-size: 20px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=value.css.map */
