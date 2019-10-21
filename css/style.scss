@@ -1,8 +1,11 @@
+// Modules
+@import "value";
+@import 'slideshow';
+@import "responsive";
+@import "global_variables";
+
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400&display=swap');
-
-// Variables
-@import "global_variables";
 
 // Mixins
 @mixin load-image($image_path, $image_height) {
