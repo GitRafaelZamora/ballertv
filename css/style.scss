@@ -1,7 +1,6 @@
 // Modules
 @import "value";
 @import 'slideshow';
-@import "responsive";
 @import "global_variables";
 
 // Google Fonts
@@ -123,11 +122,19 @@ section {
 }
 
 .navigation {
-	height: 50px;
+	position: absolute;
+	width: 100vw;
+	height: 55px;
 	background-color: $navigation_bg_color;
-
 	&__logo {
-		padding-top: 15px;
+		&--mobile {
+			display: block;
+			padding: 15px;
+		}
+		&--desktop {
+			display: none;
+			padding: 20px;
+		}
 	}
 }
 
@@ -152,6 +159,11 @@ section {
 	text-align: center;
 }
 
+.desktop-line-break {
+	display: block;
+	&--inverted {
+		display: block;
+	}
+}
 
-
-
+@import "responsive";

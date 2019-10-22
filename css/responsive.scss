@@ -1,10 +1,28 @@
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 501px) {
   .slideshow {
     display: none;
   }
+
+  .navigation {
+    height: 80px;
+    &__logo {
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+        padding: 20px;
+      }
+    }
+  }
+
   .news__grid {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .desktop-line-break {
+    display: inline;
   }
 }
