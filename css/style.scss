@@ -44,6 +44,7 @@ section {
 	cursor: pointer;
 	&--primary {
 		cursor: pointer;
+		color: white;
 		background-color: $primary_color;
 		margin: 20px;
 		padding: 20px;

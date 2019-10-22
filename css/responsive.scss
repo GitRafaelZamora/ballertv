@@ -1,4 +1,4 @@
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 614px) {
   .slideshow {
     display: none;
   }
@@ -24,5 +24,31 @@
 
   .desktop-line-break {
     display: inline;
+  }
+
+  .value {
+    height: auto;
+    &__title {
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+    &__paragraph {
+      text-align: left;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    &--two {
+      width: 50%;
+    }
   }
 }
