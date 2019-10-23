@@ -161,9 +161,10 @@ section {
   .container--small {
     max-height: 200px; }
 
-.footer__background {
+.footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   min-height: 580px;
   background-image: url("../assets/shapes/footer-group.svg");
   background-position: center;
@@ -172,13 +173,33 @@ section {
   height: 0;
   padding: 0 0 calc(10% * .25);
   width: 100vw; }
-.footer__card {
-  height: 580px;
-  width: 100%;
-  border: 3px solid blue;
-  background: url("../assets/shapes/footer-card.svg") no-repeat center; }
-  .footer__card--large {
-    display: none; }
+  .footer__title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    color: #FFFFFF; }
+  .footer__card {
+    height: 390px;
+    width: 265px;
+    border: 3px solid blue;
+    background: url("../assets/shapes/footer-card.svg") no-repeat center;
+    background-size: auto 100%; }
+    .footer__card__content {
+      padding: 20px;
+      text-align: left; }
+    .footer__card--large {
+      display: none; }
+    .footer__card__link {
+      text-decoration: none;
+      color: #ED503E;
+      font-size: 12px;
+      font-weight: 600; }
+    .footer__card__paragraph {
+      font-size: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
 
 .hero {
   display: flex;
@@ -240,6 +261,9 @@ section {
   .desktop-line-break--inverted {
     display: block; }
 
+.center {
+  justify-content: center; }
+
 @media only screen and (min-width: 600px) {
   .button--primary {
     font-size: 18px;
@@ -289,10 +313,24 @@ section {
     .column--two {
       width: 50%; }
 
-  .footer__card {
-    background: url("../assets/shapes/footer-card-large.svg") no-repeat center;
-    width: 50vw; }
-    .footer__card--large {
-      display: block; } }
+  .footer {
+    align-items: unset; }
+    .footer__card {
+      display: none; }
+      .footer__card__content {
+        padding: 40px;
+        text-align: left; }
+      .footer__card--large {
+        display: flex;
+        width: 410px;
+        margin: 20px; }
+        .footer__card--large-left {
+          height: 305px;
+          background: url("../assets/shapes/footer-card-large-left.svg") no-repeat center;
+          background-size: auto 100%; }
+        .footer__card--large-right {
+          height: 325px;
+          background: url("../assets/shapes/footer-card-large-right.svg") no-repeat center;
+          background-size: auto 100%; } }
 
 /*# sourceMappingURL=style.css.map */

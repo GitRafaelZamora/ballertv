@@ -72,11 +72,32 @@
     }
   }
 
-  .footer__card {
-    background: url("../assets/shapes/footer-card-large.svg") no-repeat center;
-    width: 50vw;
-    &--large {
-      display: block;
+  .footer {
+    align-items: unset;
+    &__card {
+        display: none;
+        &__content {
+          padding: 40px;
+          text-align: left;
+        }
+        &--large {
+          display: flex;
+          width: 410px;
+          margin: 20px;
+          &-left {
+            height: 305px;
+            background: url("../assets/shapes/footer-card-large-left.svg") no-repeat center;
+            background-size: auto 100%;
+          }
+          &-right {
+            height: 325px;
+            background: url("../assets/shapes/footer-card-large-right.svg") no-repeat center;
+            background-size: auto 100%;
+          }
+        }
     }
   }
+
+
+
 }
