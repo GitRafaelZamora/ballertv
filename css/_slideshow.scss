@@ -39,5 +39,12 @@
 
 	&__grid {
 		display: none;
+		width: 100%;
+		justify-content: center;
+		&--logos {
+			width: 100%;
+			justify-content: center;
+			object-fit: contain;
+		}
 	}
 }

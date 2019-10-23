@@ -1,6 +1,6 @@
 @import "global_variables";
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .button {
     &--primary {
       font-size: 18px;
@@ -37,8 +37,6 @@
 
   .news__grid {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
   }
 
   .desktop-line-break {
@@ -71,6 +69,14 @@
 
     &--two {
       width: 50%;
+    }
+  }
+
+  .footer__card {
+    background: url("../assets/shapes/footer-card-large.svg") no-repeat center;
+    width: 50vw;
+    &--large {
+      display: block;
     }
   }
 }

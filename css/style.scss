@@ -11,7 +11,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-size: cover;
 	height: 0;
 	padding: 0 0 calc(10% * .25);
 }
@@ -104,22 +103,40 @@ section {
 	}
 
 	&--black {
-		@include load-image("../assets/shapes/black.png", 298px);
+		@include load-image("../assets/shapes/black-slanted-rectangle.svg", 298px);
 	}
 
 	&--red {
 		@include load-image("../assets/shapes/red-trap.svg", 373px);
-
 	}
 
 	&--image {
-		@include load-image("../assets/shapes/overlay.png", 400px);
-		background-image: url("../assets/shapes/overlay.png"),
+		@include load-image("../assets/shapes/image-overlay.svg", 400px);
+		background-image: url("../assets/shapes/image-overlay.svg"),
 		url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png");
 	}
 
+	&--small {
+		max-height: 200px;
+	}
+}
 
-
+.footer {
+	&__background {
+		display: flex;
+		flex-direction: row;
+		@include load-image("../assets/shapes/footer-group.svg", 580px);
+		width: 100vw;
+	}
+	&__card {
+		height: 580px;
+		width: 100%;
+		border: 3px solid blue;
+		background: url("../assets/shapes/footer-card.svg") no-repeat center;
+		&--large {
+			display: none;
+		}
+	}
 }
 
 .hero {
