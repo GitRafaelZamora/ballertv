@@ -83,11 +83,14 @@ section {
   flex-direction: column;
   margin: auto;
   width: 80%;
-  height: 450px;
+  min-height: 450px;
   background-image: url("../assets/shapes/Rectangle.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-size: cover;
+  height: 0;
+  padding: 0 0 calc(10% * .25); }
   .card__content {
     height: 450px;
     text-align: left;
@@ -118,29 +121,41 @@ section {
     text-align: center;
     color: #FFFFFF; }
   .container__footer {
-    height: 580px;
+    min-height: 580px;
     background-image: url("../assets/shapes/footer.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-size: cover;
+    height: 0;
+    padding: 0 0 calc(10% * .25); }
   .container--black {
-    height: 298px;
+    min-height: 298px;
     background-image: url("../assets/shapes/black.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-size: cover;
+    height: 0;
+    padding: 0 0 calc(10% * .25); }
   .container--red {
-    height: 373px;
-    background-image: url("../assets/shapes/red.png");
+    min-height: 373px;
+    background-image: url("../assets/shapes/red-trap.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-size: cover;
+    height: 0;
+    padding: 0 0 calc(10% * .25); }
   .container--image {
-    height: 400px;
+    min-height: 400px;
     background-image: url("../assets/shapes/overlay.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: cover;
+    height: 0;
+    padding: 0 0 calc(10% * .25);
     background-image: url("../assets/shapes/overlay.png"), url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"); }
 
 .hero {
@@ -203,7 +218,7 @@ section {
   .desktop-line-break--inverted {
     display: block; }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 900px) {
   .button--primary {
     font-size: 18px;
     padding: 15px 30px; }

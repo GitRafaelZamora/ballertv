@@ -6,11 +6,14 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,700&display=swap');// Mixins
 @mixin load-image($image_path, $image_height) {
-	height: $image_height;
+	min-height: $image_height;
 	background-image: url($image_path);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-size: cover;
+	height: 0;
+	padding: 0 0 calc(10% * .25);
 }
 
 // Overrides
@@ -105,7 +108,8 @@ section {
 	}
 
 	&--red {
-		@include load-image("../assets/shapes/red.png", 373px);
+		@include load-image("../assets/shapes/red-trap.svg", 373px);
+
 	}
 
 	&--image {
