@@ -1,4 +1,23 @@
-@media only screen and (min-width: 614px) {
+@import "global_variables";
+
+@media only screen and (min-width: 630px) {
+  .button {
+    &--primary {
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 46px;
+    }
+    &__subtitle {
+      font-size: 25px;
+      font-weight: 300;
+    }
+  }
+
   .slideshow {
     display: none;
   }
@@ -24,6 +43,9 @@
 
   .desktop-line-break {
     display: inline;
+    &--inverted {
+      display: inline;
+    }
   }
 
   .value {

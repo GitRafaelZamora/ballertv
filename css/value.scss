@@ -9,12 +9,14 @@
   }
 
   &__paragraph {
-    color: $paragraph_color;
-    font-size: $small;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9B9B9B;
   }
 
   &__title {
-    font-size: $medium;
-    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
   }
 }
