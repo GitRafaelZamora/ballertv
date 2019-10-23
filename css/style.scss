@@ -2,42 +2,20 @@
 @import "value";
 @import 'slideshow';
 @import "global_variables";
+@import "base_override";
+
 
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,700&display=swap');// Mixins
+// Mixins
 @mixin load-image($image_path, $image_height) {
+	height: 0;
+	padding: 0 0 calc(10% * .25);
 	min-height: $image_height;
 	background-image: url($image_path);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 0;
-	padding: 0 0 calc(10% * .25);
-}
-
-// Overrides
-body {
-	margin: 0 auto;
-	font-family: "Open Sans", sans-serif;
-	line-height: 1.5;
-}
-
-button {
-	all: unset;
-}
-
-h1 {
-	all: unset;
-	font-family: "Oswald", sans-serif;
-}
-
-h2 {
-	all: unset;
-}
-
-section {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 
 // Classes
@@ -54,48 +32,22 @@ section {
 	}
 }
 
-.card {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	width: 80%;
-	@include load-image("../assets/shapes/Rectangle.png", 450px);
-	&__content {
-		height: 450px;
-		text-align: left;
-		padding: 20px;
-	}
-	&__paragraph {
-		font-size: 16px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	&__link {
-		text-decoration: none;
-		color: $primary_color;
-		font-size: 12px;
-		font-weight: 600;
-	}
-}
-
 .container {
 	width: 100vw;
 	&__title {
+		padding: 60px 0 40px 0;
 		font-size: 24px;
 		font-weight: 300;
-		padding: 60px 0 40px 0;
 		text-align: center;
 		color: #FFFFFF;
-	}
-
-	&__title--small {
-		font-size: 16px;
-		font-weight: 300;
-		padding: 90px 0 10px 0;
-		margin-bottom: 20px;
-		text-align: center;
-		color: #FFFFFF;
+		&--small {
+			padding: 90px 0 10px 0;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-weight: 300;
+			text-align: center;
+			color: #FFFFFF;
+		}
 	}
 
 	&__footer {
@@ -125,13 +77,13 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@include load-image("../assets/shapes/footer-group.svg", 580px);
 	width: 100vw;
+	@include load-image("../assets/shapes/footer-group.svg", 580px);
 	&__title {
-		font-size: 24px;
-		font-weight: 700;
-		font-family: "Oswald", sans-serif;
 		padding: 60px 0 40px 0;
+		font-family: "Oswald", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
 		text-align: center;
 		color: #FFFFFF;
 	}
@@ -149,15 +101,15 @@ section {
 		}
 
 		&__link {
-			text-decoration: none;
-			color: $primary_color;
 			font-size: 12px;
 			font-weight: 600;
+			color: $primary_color;
+			text-decoration: none;
 		}
 		&__paragraph {
-			font-size: 16px;
 			padding-top: 20px;
 			padding-bottom: 20px;
+			font-size: 16px;
 		}
 	}
 }
@@ -184,19 +136,19 @@ section {
 	}
 
 	&__subtitle {
+		max-width: 550px;
+		padding-top: 25px;
 		font-size: 18px;
 		font-weight: 100;
 		font-family: "Open Sans", sans-serif;
-		padding-top: 25px;
-		max-width: 550px;
 	}
 }
 
 .navigation {
+	height: 55px;
+	width: 100vw;
 	position: fixed;
 	z-index: 1;
-	width: 100vw;
-	height: 55px;
 	background-color: $navigation_bg_color;
 	&__logo {
 		&--mobile {
@@ -212,9 +164,9 @@ section {
 
 .section {
 	&__title {
+		font-family: "Oswald", sans-serif;
 		font-weight: 700;
 		font-size: 24px;
-		font-family: "Oswald", sans-serif;
 		&--gray {
 			color: #4A4A4A;
 		}
@@ -225,7 +177,6 @@ section {
 		padding-right: 40px;
 		font-weight: 200;
 		color: #4A4A4A;
-
 	}
 }
 
@@ -248,4 +199,5 @@ section {
 	justify-content: center;
 }
 
+// Loaded last
 @import "responsive";

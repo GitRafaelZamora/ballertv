@@ -84,79 +84,53 @@ section {
     margin-top: 20px;
     padding: 10px 40px; }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 80%;
-  min-height: 450px;
-  background-image: url("../assets/shapes/Rectangle.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 0;
-  padding: 0 0 calc(10% * .25); }
-  .card__content {
-    height: 450px;
-    text-align: left;
-    padding: 20px; }
-  .card__paragraph {
-    font-size: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .card__link {
-    text-decoration: none;
-    color: #ED503E;
-    font-size: 12px;
-    font-weight: 600; }
-
 .container {
   width: 100vw; }
   .container__title {
+    padding: 60px 0 40px 0;
     font-size: 24px;
     font-weight: 300;
-    padding: 60px 0 40px 0;
     text-align: center;
     color: #FFFFFF; }
-  .container__title--small {
-    font-size: 16px;
-    font-weight: 300;
-    padding: 90px 0 10px 0;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #FFFFFF; }
+    .container__title--small {
+      padding: 90px 0 10px 0;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      color: #FFFFFF; }
   .container__footer {
+    height: 0;
+    padding: 0 0 calc(10% * .25);
     min-height: 580px;
     background-image: url("../assets/shapes/footer.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 0;
-    padding: 0 0 calc(10% * .25); }
+    background-size: cover; }
   .container--black {
+    height: 0;
+    padding: 0 0 calc(10% * .25);
     min-height: 298px;
     background-image: url("../assets/shapes/black-slanted-rectangle.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 0;
-    padding: 0 0 calc(10% * .25); }
+    background-size: cover; }
   .container--red {
+    height: 0;
+    padding: 0 0 calc(10% * .25);
     min-height: 373px;
     background-image: url("../assets/shapes/red-trap.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 0;
-    padding: 0 0 calc(10% * .25); }
+    background-size: cover; }
   .container--image {
+    height: 0;
+    padding: 0 0 calc(10% * .25);
     min-height: 400px;
     background-image: url("../assets/shapes/image-overlay.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 0;
-    padding: 0 0 calc(10% * .25);
     background-image: url("../assets/shapes/image-overlay.svg"), url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"); }
   .container--small {
     max-height: 200px; }
@@ -165,19 +139,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  height: 0;
+  padding: 0 0 calc(10% * .25);
   min-height: 580px;
   background-image: url("../assets/shapes/footer-group.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 0;
-  padding: 0 0 calc(10% * .25);
-  width: 100vw; }
+  background-size: cover; }
   .footer__title {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: "Oswald", sans-serif;
     padding: 60px 0 40px 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     text-align: center;
     color: #FFFFFF; }
   .footer__card {
@@ -191,14 +165,14 @@ section {
     .footer__card--large {
       display: none; }
     .footer__card__link {
-      text-decoration: none;
-      color: #ED503E;
       font-size: 12px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #ED503E;
+      text-decoration: none; }
     .footer__card__paragraph {
-      font-size: 16px;
       padding-top: 20px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      font-size: 16px; }
 
 .hero {
   display: flex;
@@ -218,17 +192,17 @@ section {
     font-size: 35px;
     font-weight: 200; }
   .hero__subtitle {
+    max-width: 550px;
+    padding-top: 25px;
     font-size: 18px;
     font-weight: 100;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 25px;
-    max-width: 550px; }
+    font-family: "Open Sans", sans-serif; }
 
 .navigation {
+  height: 55px;
+  width: 100vw;
   position: fixed;
   z-index: 1;
-  width: 100vw;
-  height: 55px;
   background-color: black; }
   .navigation__logo--mobile {
     display: block;
@@ -238,9 +212,9 @@ section {
     padding: 20px; }
 
 .section__title {
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  font-family: "Oswald", sans-serif; }
+  font-size: 24px; }
   .section__title--gray {
     color: #4A4A4A; }
 .section__paragraph {
