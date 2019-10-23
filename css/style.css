@@ -31,12 +31,12 @@
 
 .next {
   right: 20px;
-  background-image: url("../assets/icons/right-arrow.png");
+  background-image: url("../assets/icons/right-arrow.svg");
   background-repeat: no-repeat; }
 
 .prev {
   left: 40px;
-  background-image: url("../assets/icons/left-arrow.png");
+  background-image: url("../assets/icons/left-arrow.svg");
   background-repeat: no-repeat; }
 
 .news {
@@ -123,6 +123,14 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  .container--red-slanted {
+    height: 0;
+    padding: 0 0 calc(10% * .25);
+    min-height: 339px;
+    background-image: url("../assets/shapes/red-slanted-rectangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .container--image {
     height: 0;
     padding: 0 0 calc(10% * .25);
@@ -132,8 +140,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../assets/shapes/image-overlay.svg"), url("../assets/images/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"); }
-  .container--small {
-    max-height: 200px; }
 
 .footer {
   display: flex;
