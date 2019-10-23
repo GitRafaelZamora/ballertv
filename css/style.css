@@ -209,8 +209,8 @@ section {
   color: white;
   line-height: 1.2; }
   .hero__image {
-    height: 582px;
-    background-image: url("../assets/images/hero-overlay.png"), url("../assets/images/hero-image.png");
+    height: 691px;
+    background-image: url("../assets/images/hero-with-divider.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
