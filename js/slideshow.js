@@ -1,28 +1,23 @@
+// Initialize the starting slide.
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlide(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+// onclick event for Next / Previous controls
+function updateSlide(n) {
+    showSlide(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-//
-function showSlides(n) {
+// Toggle the display for the current slide.
+function showSlide(currentSlide) {
     // Get an array of slides.
     let slides = document.getElementsByClassName("slide");
 
-    if (n > slides.length) {
-        // Then wrap to the beginning of slides.
-        slideIndex = 1
-    }
+    // Wrap to the beginning of slides.
+    if (currentSlide > slides.length) slideIndex = 1;
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+    // Go through all the slides and hide them.
+    for (let slide of slides) slide.style.display = "none";
+
+    // Display the current slide.
     slides[slideIndex-1].style.display = "block";
 }
