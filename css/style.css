@@ -60,7 +60,8 @@ body {
   line-height: 1.5; }
 
 button {
-  all: unset; }
+  all: unset;
+  color: #FFFFFF; }
 
 h1 {
   all: unset;
