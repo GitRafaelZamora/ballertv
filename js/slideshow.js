@@ -15,6 +15,9 @@ function showSlide(currentSlide) {
     // Wrap to the beginning of slides.
     if (currentSlide > slides.length) slideIndex = 1;
 
+    // Wrap to the end of slides.
+    if (currentSlide < 1) slideIndex = 3;
+
     // Go through all the slides and hide them.
     for (let slide of slides) slide.style.display = "none";
 
