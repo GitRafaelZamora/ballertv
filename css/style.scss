@@ -81,7 +81,7 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100vw;
-	@include load-image("../assets/shapes/footer-group.svg", 580px);
+	@include load-image("../assets/shapes/footer-group.png", 580px);
 	&__title {
 		padding: 60px 0 40px 0;
 		font-family: "Oswald", sans-serif;

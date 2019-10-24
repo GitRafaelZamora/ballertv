@@ -152,7 +152,7 @@ section {
   height: 0;
   padding: 0 0 calc(10% * .25);
   min-height: 580px;
-  background-image: url("../assets/shapes/footer-group.svg");
+  background-image: url("../assets/shapes/footer-group.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -247,7 +247,7 @@ section {
 .center {
   justify-content: center; }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 660px) {
   .button--primary {
     font-size: 18px;
     padding: 15px 30px; }

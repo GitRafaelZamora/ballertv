@@ -1,6 +1,6 @@
 @import "global_variables";
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 660px) {
   .button {
 
     &--primary {
@@ -75,6 +75,7 @@
 
   .footer {
     align-items: unset;
+    //@include load-image("../assets/shapes/footer-group.svg", 580px);
     &__card {
         display: none;
         &__content {
